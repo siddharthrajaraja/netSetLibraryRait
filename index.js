@@ -17,6 +17,6 @@ app.use((req, res, next) => {
     res.redirect('/error')
 })
 
-app.listen(8000, () => {
+app.listen(8000 || process.env.PORT, () => {
     console.log("Listening to 8000 PORT")
 })
